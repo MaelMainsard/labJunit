@@ -16,8 +16,7 @@ class TestCompteBancaire {
 	void testDebit2(){
 		CompteBancaire cb = new CompteBancaire(1000);
 		assertThrows(Error.class, () -> {
-            cb.debiterSolde(-900);
-            fail("L'appel à debiterSolde n'a pas levé d'erreur");
+            cb.debiterSolde(-900); 
         });
 		
 	}
@@ -34,7 +33,6 @@ class TestCompteBancaire {
 		CompteBancaire cb = new CompteBancaire(1000);
 		assertThrows(Error.class, () -> {
             cb.crediterSolde(-200);
-            fail("L'appel à debiterSolde n'a pas levé d'erreur");
         });
 	}
 
